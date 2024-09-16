@@ -376,3 +376,9 @@ hr {
   display: flex;
   justify-content: space-around;
 }
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
