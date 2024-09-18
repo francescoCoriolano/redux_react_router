@@ -1,7 +1,7 @@
-import { CartIcon } from "../icons";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-const NavBar = () => {
+import { CartIcon } from "../icons";
+export const NavBar = () => {
   const { amount } = useSelector((store) => store.cart);
 
   return (
@@ -33,5 +33,3 @@ const NavBar = () => {
     </>
   );
 };
-
-export default NavBar;
