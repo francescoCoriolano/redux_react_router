@@ -6,12 +6,12 @@ const Modal = () => {
 
   return (
     <aside className="modal-container">
-      <div className="modal">
+      <div className="bg-white w-[26rem] p-12 ">
         <h4>remove all items from your shopping cart?</h4>
-        <div className="btn-container">
+        <div className="flex justify-around mt-8">
           <button
             type="button"
-            className="btn confirm-btn"
+            className="rounded-lg px-4 py-2 border-2 border-green-700 text-green-700 hover:bg-green-700 hover:text-green-100 duration-300"
             onClick={() => {
               dispatch(clearCart());
               dispatch(closeModal());
@@ -21,7 +21,7 @@ const Modal = () => {
           </button>
           <button
             type="button"
-            className="btn clear-btn"
+            className="rounded-lg px-4 py-2 border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-red-100 duration-300"
             onClick={() => dispatch(closeModal())}
           >
             Cancel

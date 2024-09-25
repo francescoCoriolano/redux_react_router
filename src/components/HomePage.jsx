@@ -8,9 +8,9 @@ export const HomePage = () => {
   const { itemsList } = useSelector((state) => state.cart);
 
   return (
-    <div className="center">
+    <div className="flex flex-col justify-center items-center">
       <h1>HomePage</h1>
-      <div className="item-wrap">
+      <div className="grid grid-cols-4 gap-8 mt-6">
         {itemsList.map((item) => (
           <ItemCard key={item.id} {...item}>
             {item.title}

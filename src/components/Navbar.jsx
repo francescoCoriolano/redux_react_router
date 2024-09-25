@@ -6,12 +6,12 @@ export const NavBar = () => {
 
   return (
     <>
-      <nav>
-        <div className="nav-center">
+      <nav className="bg-green-800">
+        <div className="flex justify-between items-center">
           <h3>
             <Link to="/">redux toolkit</Link>
           </h3>
-          <ul className="nav-list">
+          <ul className=" flex justify-between w-[50%] text-white text-[20px] ">
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -22,11 +22,11 @@ export const NavBar = () => {
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
-          <div className="nav-container">
-            <CartIcon />
-            <div className="amount-container">
-              <p className="total-amount">{amount}</p>
+          <div className="block relative">
+            <div className="  w-[1.75rem] h-[1.75rem] rounded-full flex justify-center align-baseline  bg-green-300 top-[-0.6rem] right-[-0.6rem]">
+              <p className="">{amount}</p>
             </div>
+            <CartIcon />
           </div>
         </div>
       </nav>
