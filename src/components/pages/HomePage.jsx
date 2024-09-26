@@ -1,7 +1,7 @@
-import CartContainer from "./CartContainer";
-import Modal from "./Modal";
+import CartContainer from "../organism/CartContainer";
+import Modal from "../molecules/Modal";
 import { useSelector } from "react-redux";
-import { ItemCard } from "./ItemCard";
+import { ItemCard } from "../molecules/ItemCard";
 
 export const HomePage = () => {
   const { isOpen } = useSelector((state) => state.modal);

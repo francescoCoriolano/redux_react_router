@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { addToCart } from "../features/cart/cartSlice";
+import { addToCart } from "../../features/cart/cartSlice";
 
 // eslint-disable-next-line react/prop-types
 export const ItemCard = ({ id, title, price, img }) => {

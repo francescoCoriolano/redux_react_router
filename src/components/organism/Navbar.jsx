@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { CartIcon } from "../icons";
+import { CartIcon } from "../../assets/icons";
 export const NavBar = () => {
   const { amount } = useSelector((store) => store.cart);
 
