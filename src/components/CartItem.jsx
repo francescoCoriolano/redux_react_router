@@ -5,11 +5,11 @@ import { removeItem, increase, decrease } from "../features/cart/cartSlice";
 const CartItem = ({ id, img, title, price, amount }) => {
   const dispatch = useDispatch();
   return (
-    <article className="cart-item">
-      <img src={img} alt={title} />
+    <article className="flex justify-between p-4">
+      <img src={img} alt={title} className="w-[5rem] h-[5rem]" />
       <div>
         <h4>{title}</h4>
-        <h4 className="item-price">{price}</h4>
+        <h4>{price}</h4>
         <button
           className="rounded-lg px-4 py-2 border-2 border-green-700 text-green-700 hover:bg-green-700 hover:text-green-100 duration-300"
           onClick={() => {
