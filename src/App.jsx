@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { BrowserRouter, useRoutes } from "react-router-dom";
 import { calculateTotal } from "./features/cart/cartSlice";
 import { About, Contact, HomePage } from "./components";
-import { NavBar } from "./components/organism/Navbar";
+import { NavBar } from "./components/organism/NavBar/Navbar";
 import "./index.css";
 
 function App() {

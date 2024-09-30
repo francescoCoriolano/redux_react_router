@@ -1,8 +1,8 @@
-import CartItem from "../molecules/CartItem";
+import CartItem from "../../molecules/CartItem/CartItem";
 import { useSelector } from "react-redux";
-import { openModal } from "../../features/modal/modalSlice";
+import { openModal } from "../../../features/modal/modalSlice";
 import { useDispatch } from "react-redux";
-import Button from "../atoms/Button/Button";
+import Button from "../../atoms/Button/Button";
 const CartContainer = () => {
   const dispatch = useDispatch();
   const { total, cartItems } = useSelector((state) => state.cart);

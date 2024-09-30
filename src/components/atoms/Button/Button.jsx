@@ -7,7 +7,7 @@ export const Theme = {
   OutlineDanger:
     "border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-red-100 duration-300",
 };
-const Button = ({ text, onClick, variant = Theme.Primary }) => {
+const Button = ({ text, onClick, variant = "Primary" }) => {
   return (
     <button
       type="button"
