@@ -2,6 +2,7 @@ import CartItem from "../molecules/CartItem";
 import { useSelector } from "react-redux";
 import { openModal } from "../../features/modal/modalSlice";
 import { useDispatch } from "react-redux";
+import Button from "../atoms/Button/Button";
 const CartContainer = () => {
   const dispatch = useDispatch();
   const { total, cartItems } = useSelector((state) => state.cart);
@@ -19,14 +20,12 @@ const CartContainer = () => {
           <h4 className="flex justify-between">total</h4>
           <div>$ {total.toFixed(2)}</div>
         </div>
-        <button
-          className="rounded-lg px-4 py-2 bg-green-700 text-green-100 hover:bg-green-800 duration-300"
+        <Button
+          text="Clear cart"
           onClick={() => {
             dispatch(openModal());
           }}
-        >
-          clear cart
-        </button>
+        />
       </footer>
     </section>
   );

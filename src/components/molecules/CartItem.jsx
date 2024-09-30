@@ -1,6 +1,7 @@
 import { ChevronDown, ChevronUp } from "../../assets/icons";
 import { useDispatch } from "react-redux";
 import { removeItem, increase, decrease } from "../../features/cart/cartSlice";
+import Button from "../atoms/Button/Button";
 // eslint-disable-next-line react/prop-types
 const CartItem = ({ id, img, title, price, amount }) => {
   const dispatch = useDispatch();
@@ -10,14 +11,13 @@ const CartItem = ({ id, img, title, price, amount }) => {
       <div>
         <h4>{title}</h4>
         <h4>{price}</h4>
-        <button
-          className="rounded-lg px-4 py-2 border-2 border-green-700 text-green-700 hover:bg-green-700 hover:text-green-100 duration-300"
+        <Button
+          text="Remove"
           onClick={() => {
             dispatch(removeItem(id));
           }}
-        >
-          Remove
-        </button>
+          variant="Outline"
+        />
       </div>
       <div>
         <button
