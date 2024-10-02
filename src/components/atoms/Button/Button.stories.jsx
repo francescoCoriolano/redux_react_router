@@ -24,6 +24,13 @@ export const Primary = {
   },
 };
 
+export const Secondary = {
+  args: {
+    text: "Secondary",
+    variant: "Secondary",
+  },
+};
+
 export const Outline = {
   args: {
     text: "Outline",
@@ -38,16 +45,10 @@ export const OutlineDanger = {
     variant: "OutlineDanger",
   },
 };
-export const Secondary = {
-  args: {
-    text: "Secondary",
-    variant: "Secondary",
-  },
-};
 
-// import { Meta, StoryFn } from "@storybook/react";
-// import Button from ".";
-// import { Theme } from "./Button";
+// import Button from "./Button";
+// import { action } from "@storybook/addon-actions";
+
 // const componentMeta = {
 //   title: "Button",
 //   component: Button,
@@ -56,18 +57,23 @@ export const Secondary = {
 
 // const ButtonTemplate = (args) => <Button {...args} />;
 
-// export const Default = ButtonTemplate.bind({});
-
+// export const Primary = ButtonTemplate.bind({});
 // Primary.args = {
-//   text: "My button",
+//   text: "Primary",
 //   onClick: action("onClick"),
-//   variant: Theme.Primary,
+//   variant: "Primary",
 // };
-
-// Outline.args = {
-//   text: "My button",
+// export const Secondary = ButtonTemplate.bind({});
+// Primary.args = {
+//   text: "Secondary",
 //   onClick: action("onClick"),
-//   variant: Theme.Outline,
+//   variant: "Secondary",
+// };
+// export const Outline = ButtonTemplate.bind({});
+// Outline.args = {
+//   text: "Outline",
+//   onClick: action("onClick"),
+//   variant: "Outline",
 // };
 
 // export default componentMeta;

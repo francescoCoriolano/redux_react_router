@@ -9,7 +9,6 @@ import "./index.css";
 function App() {
   const dispatch = useDispatch();
   const { cartItems } = useSelector((state) => state.cart);
-
   const RenderRouter = () => {
     const element = useRoutes([
       { path: "/", element: <HomePage /> },
